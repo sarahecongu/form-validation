@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-size: 35px;
+        }
+    </style>
+    <script>
+        //////////question1///////
+        var linebreak = "<br></br>";
+        function mySum(n1, n2) {
+            return n1 + n2 + linebreak
+        }
+        document.write("The sum is: " + mySum(100, 889));
+
+
+
+        function square() {
+            for (let i = 1; i <= 10; i++) {
+                document.write("The square of " + i + " is " + i * i, linebreak)
+
+
+            }
+
+        }
+        square()
+        // program to find the largest among three numbers
+
+        // take input from the user
+
+        function three() {
+            const num1 = parseFloat(prompt("Enter first number: "));
+            const num2 = parseFloat(prompt("Enter second number: "));
+            const num3 = parseFloat(prompt("Enter third number: "));
+            const maximum = Math.max(num1, num2, num3);
+            let max;
+
+            // check the condition
+            if (num1 >= num2 && num1 >= num3) {
+                max = num1;
+            }
+            else if (num2 >= num1 && num2 >= num3) {
+                max = num2;
+            }
+            else {
+                max = num3;
+            }
+
+            // display the result
+            document.write("The first number is: " + num1, linebreak, "The second number is:" + num2, linebreak, "The third is :" + num3, linebreak + "The Maximum number is" + max)
+        }
+
+        three();
+    </script>
+
+</body>
+
+</html>
